@@ -1,0 +1,14 @@
+{
+  "buildCommand": "npm run build",
+  "installCommand": "npm install --legacy-peer-deps",
+  "devCommand": "npm run dev",
+  "framework": "nextjs",
+  "functions": {
+    "app/**/*.{js,ts,jsx,tsx}": {
+      "maxDuration": 30
+    },
+    "pages/api/**/*.{js,ts}": {
+      "maxDuration": 30
+    }
+  }
+}
